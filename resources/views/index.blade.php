@@ -12,59 +12,78 @@
     <title>Document</title>
   </head>
 
-  <body>
-    <main>
-      <header>
+  <body class="bg-gray-100">
+    <header class="w-full relative pt-2 sm:hidden">
+      <div class="flex justify-between items-center w-[80%] m-auto">
         <div class="Logo">
-          <h3><span>K</span>amba Tukebele</h3>
+          <h3 class="italic font-bold text-2xl"><span>K</span>amba Tukebele</h3>
         </div>
         <nav>
-          <ul>
-            <a href="#">
-              <li><i class="fa-solid fa-house-user"></i>Home</li>
+          <ul class="flex justify-center items-center">
+            <a href="#"
+              class="block ml-3 bg-gradient-to-r from-purple-500 to-pink-500 border w-24 py-2 rounded-md hover:bg-blue-900 text-white">
+              <li class="flex justify-center items-center"><i class="fa-solid fa-house-user mr-1"></i>Home</li>
             </a>
-            <a href="#">
-              <li><i class="fa-solid fa-user"></i>About</li>
+            <a href="#" class="block ml-3 bg-white border w-24 py-2 rounded-md hover:bg-blue-900 hover:text-white">
+              <li class="flex justify-center items-center"><i class="fa-solid fa-user mr-1"></i>About</li>
             </a>
-            <a href="#">
-              <li><i class="fa-solid fa-person-digging"></i>Works</li>
+            <a href="#" class="block ml-3 bg-white border w-24 py-2 rounded-md hover:bg-blue-900 hover:text-white">
+              <li class="flex justify-center items-center"><i class="fa-solid fa-person-digging mr-1"></i>Works</li>
             </a>
-            <a href="#">
-              <li><i class="fa-solid fa-address-book"></i>Contact</li>
+            <a href="#" class="block ml-3 bg-white border w-24 py-2 rounded-md hover:bg-blue-900 hover:text-white">
+              <li class="flex justify-center items-center"><i class="fa-solid fa-address-book mr-1"></i>Contact</li>
             </a>
           </ul>
         </nav>
-      </header>
-      <section>
+      </div>
+    </header>
+    {{-- HIDDEN MENU --}}
+    <header>
+
+    </header>
+    <section class="w-full absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+      <div class="flex justify-between flex-col items-center w-[80%] m-auto">
         <div>
-          <img src="{{ asset('assets/images/Charles.jpeg') }}" alt="">
+          <img class="w-[250px] rounded-[50%]" src="{{ asset('assets/images/Charles.jpeg') }}" alt="">
         </div>
-        <div>
-          <h4>Kamba Tukebele</h4>
-          <h6>FullStack Web Developer Laravel/React</h6>
+        <div class="flex flex-col justify-center items-center">
+          <h4 class="text-lg mt-5 font-semibold leading-10">Kamba Tukebele</h4>
+          <h6 class="text-sm font-normal text-gray-400 mb-5">PHP/Laravel Back-End Developer</h6>
         </div>
-        <div>
-          <div>
-            <i class="fa-brands fa-github"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-twitter"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-square-instagram"></i>
-          </div>
+        <div class="flex w-40 justify-between items-center ">
+          <a href="#">
+            <div class="bg-white rounded-[5px] border mr-2 w-8 flex justify-center items-center h-8">
+              <i class="fa-brands fa-github text-2xl"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="bg-white rounded-[5px] border mr-2 w-8 flex justify-center items-center h-8">
+              <i class="fa-brands fa-linkedin text-2xl text-blue-900"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="bg-white rounded-[5px] border mr-2 w-8 flex justify-center items-center h-8">
+              <i class="fa-brands fa-twitter text-2xl text-blue-400"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="bg-white rounded-[5px] border mr-2 w-8 flex justify-center items-center h-8">
+              <i class="fa-brands fa-youtube text-2xl text-red-600"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="bg-white rounded-[5px] border mr-2 w-8 flex justify-center items-center h-8">
+              <i class="fa-brands fa-square-instagram text-2xl text-black"></i>
+            </div>
+          </a>
         </div>
-        <div>
-          <i class="fa-solid fa-download"></i> Download CV
+        <div
+          class="border mt-5 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white w-40 flex justify-center items-center cursor-pointer">
+          <i class="fa-solid fa-download mr-1"></i> Download CV
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
   </body>
 
 </html>
